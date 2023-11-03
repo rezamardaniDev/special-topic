@@ -7,3 +7,11 @@
 تضمین میشود که ورودی فقط متشکل از حروف کوچک انگلیسی است.
 """
 
+def check_hello(string):
+    for i in range(len(string)-4):
+        if string[i:i+5] == "hello":
+            return "Yes"
+    return "No"
+
+print(check_hello("ahello"))
+print(check_hello("hlello"))

@@ -6,3 +6,7 @@
 برنامه ای بنویسید که ۱۰ اسم از ورودی بخواند و استانداردشده ی آنها را در خروجی
 چاپ کن
 """
+
+names = input("enter names: ").split(" ")
+for name in names:
+    print(name.title())
